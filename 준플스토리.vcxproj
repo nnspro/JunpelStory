@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8C34C9EC-C1E4-4CFC-8A9C-B5C21D097CE3}</ProjectGuid>
+    <ProjectName>JunPelStory</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36121.58</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/준플스토리.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/준플스토리.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/준플스토리.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/준플스토리.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/준플스토리.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/준플스토리.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;dxguid.lib;comctl32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/준플스토리.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/준플스토리.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="d3dfont.cpp" />
+    <ClCompile Include="Mp3.cpp" />
+    <ClCompile Include="Npc.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="TextureData.cpp" />
+    <ClCompile Include="TextInput.cpp" />
+    <ClCompile Include="TextOutput.cpp" />
+    <ClCompile Include="DirectInput.cpp" />
+    <ClCompile Include="Direct3D.cpp" />
+    <ClCompile Include="DirectSound.cpp" />
+    <ClCompile Include="DialogPopup.cpp" />
+    <ClCompile Include="MapOutput.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MiniMap.cpp" />
+    <ClCompile Include="BGManager.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="StatusForm.cpp" />
+    <ClCompile Include="StatusForm_0.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteData.cpp" />
+    <ClCompile Include="IPackData.cpp" />
+    <ClCompile Include="ItemInfo.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="UnitManager.cpp" />
+    <ClCompile Include="MoveMagic.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Infomation.cpp" />
+    <ClCompile Include="JunpelStory.cpp" />
+    <ClCompile Include="Missail.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Pet.cpp" />
+    <ClCompile Include="FrameCheck.cpp" />
+    <ClCompile Include="Effect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JunpelStory.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d3dfont.h" />
+    <ClInclude Include="Mp3.h" />
+    <ClInclude Include="Npc.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="TextureData.h" />
+    <ClInclude Include="TextInput.h" />
+    <ClInclude Include="TextOutput.h" />
+    <ClInclude Include="DirectInput.h" />
+    <ClInclude Include="Direct3D.h" />
+    <ClInclude Include="DirectSound.h" />
+    <ClInclude Include="DialogPopup.h" />
+    <ClInclude Include="MapData.h" />
+    <ClInclude Include="MapOutput.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MessageBox.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MiniMap.h" />
+    <ClInclude Include="BGManager.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="StatusForm.h" />
+    <ClInclude Include="StatusForm_0.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteData.h" />
+    <ClInclude Include="IPackData.h" />
+    <ClInclude Include="ItemInfo.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="UnitManager.h" />
+    <ClInclude Include="MoveMagic.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Infomation.h" />
+    <ClInclude Include="JunpelStory.h" />
+    <ClInclude Include="Missail.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Pet.h" />
+    <ClInclude Include="FrameCheck.h" />
+    <ClInclude Include="Effect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
